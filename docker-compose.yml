@@ -51,7 +51,6 @@ services:
     volumes:
       - ./parity/config:/parity/config:ro
     ports:
-      - 8180:8180
       - 8545:8545
       - 8546:8546
     networks:
