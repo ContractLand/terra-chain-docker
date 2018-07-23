@@ -15,6 +15,8 @@
     }
   },
   "params": {
+    "maxCodeSize": "0x60000",
+		"maxCodeSizeTransition": "0x0",
     "gasLimitBoundDivisor": "0x400",
     "maximumExtraDataSize": "0x20",
     "minGasLimit": "0x1388",
