@@ -47,7 +47,7 @@ services:
 
   member0:
     image: parity/parity:${PARITY_VERSION}
-    command: --config /parity/config/member.toml --ui-no-validation ui
+    command: --config /parity/config/member.toml
     volumes:
       - ./parity/config:/parity/config:ro
     ports:
