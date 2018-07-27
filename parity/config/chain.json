@@ -4,6 +4,8 @@
     "authorityRound": {
       "params": {
         "stepDuration": "1",
+        "maximumUncleCountTransition": 0,
+        "maximumUncleCount": 0,
         "validators": {
           "list": [
             "0x00Bd138aBD70e2F00903268F3Db08f2D25677C9e",
@@ -34,7 +36,7 @@
       }
     },
     "difficulty": "0x20000",
-    "gasLimit": "0x165A0BC00"
+    "gasLimit": "0x663BE0"
   },
   "accounts": {
     "0x0000000000000000000000000000000000000001": {
