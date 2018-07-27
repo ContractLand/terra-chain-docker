@@ -60,7 +60,7 @@
     }
   },
   {
-    "name": "member0",
+    "name": "public-node",
     "script": "app.js",
     "log_date_format": "YYYY-MM-DD HH:mm Z",
     "merge_logs": false,
@@ -70,50 +70,10 @@
     "exec_mode": "fork_mode",
     "env": {
       "NODE_ENV": "production",
-      "RPC_HOST": "member0",
+      "RPC_HOST": "public-node",
       "RPC_PORT": "8545",
       "LISTENING_PORT": "30303",
-      "INSTANCE_NAME": "member0",
-      "WS_SERVER": "ws://dashboard:3000",
-      "WS_SECRET": "123",
-      "VERBOSITY": 3
-    }
-  },
-  {
-    "name": "member1",
-    "script": "app.js",
-    "log_date_format": "YYYY-MM-DD HH:mm Z",
-    "merge_logs": false,
-    "watch": true,
-    "max_restarts": 10,
-    "exec_interpreter": "node",
-    "exec_mode": "fork_mode",
-    "env": {
-      "NODE_ENV": "production",
-      "RPC_HOST": "member1",
-      "RPC_PORT": "8545",
-      "LISTENING_PORT": "30303",
-      "INSTANCE_NAME": "member1",
-      "WS_SERVER": "ws://dashboard:3000",
-      "WS_SECRET": "123",
-      "VERBOSITY": 3
-    }
-  },
-  {
-    "name": "member2",
-    "script": "app.js",
-    "log_date_format": "YYYY-MM-DD HH:mm Z",
-    "merge_logs": false,
-    "watch": true,
-    "max_restarts": 10,
-    "exec_interpreter": "node",
-    "exec_mode": "fork_mode",
-    "env": {
-      "NODE_ENV": "production",
-      "RPC_HOST": "member2",
-      "RPC_PORT": "8545",
-      "LISTENING_PORT": "30303",
-      "INSTANCE_NAME": "member2",
+      "INSTANCE_NAME": "public-node",
       "WS_SERVER": "ws://dashboard:3000",
       "WS_SECRET": "123",
       "VERBOSITY": 3
