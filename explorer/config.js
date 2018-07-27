@@ -6,7 +6,7 @@ const vars = [
 ]
 
 const config = {
-    'JSONRPC_HOST': 'localhost',
+    'JSONRPC_HOST': public-node,
     'JSONRPC_PORT': '8545'
 }
 
