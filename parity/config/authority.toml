@@ -6,6 +6,7 @@ password = ["/parity/authority.pwd"]
 
 [mining]
 reseal_on_txs = "none"
+force_sealing = true
 reseal_min_period = 0
 min_gas_price = 0
 
