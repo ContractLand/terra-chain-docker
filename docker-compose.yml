@@ -14,6 +14,7 @@ services:
     networks:
       app_net:
         ipv4_address: 172.16.0.10
+    restart: always
 
   authority1:
     image: parity/parity:${PARITY_VERSION}
@@ -29,6 +30,7 @@ services:
     networks:
       app_net:
         ipv4_address: 172.16.0.11
+    restart: always
 
   authority2:
     image: parity/parity:${PARITY_VERSION}
@@ -44,6 +46,7 @@ services:
     networks:
       app_net:
         ipv4_address: 172.16.0.12
+    restart: always
 
   public-node:
     image: parity/parity:${PARITY_VERSION}
@@ -56,6 +59,7 @@ services:
     networks:
       app_net:
         ipv4_address: 172.16.0.20
+    restart: always
 
   monitor:
     image: buythewhale/ethstats_monitor
@@ -64,6 +68,7 @@ services:
     networks:
       app_net:
         ipv4_address: 172.16.0.100
+    restart: always
 
   dashboard:
     image: buythewhale/ethstats
@@ -74,6 +79,7 @@ services:
     networks:
       app_net:
         ipv4_address: 172.16.0.200
+    restart: always
 
   explorer:
     build: explorer
@@ -84,6 +90,7 @@ services:
     networks:
       app_net:
         ipv4_address: 172.16.0.201
+    restart: always
 
 volumes:
   authorities0:
