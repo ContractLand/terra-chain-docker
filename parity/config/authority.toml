@@ -18,7 +18,11 @@ bootnodes = [
 ]
 
 [rpc]
-disable = true
+port = 8545
+interface = "0.0.0.0"
+cors = ["all"]
+hosts = ["all"]
+apis = ["safe"]
 
 [websockets]
 disable = true
