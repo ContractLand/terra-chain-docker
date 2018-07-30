@@ -62,16 +62,16 @@ services:
     restart: always
 
   monitor:
-    image: buythewhale/ethstats_monitor
+    build: monitor
     volumes:
-      - ./monitor/app.json:/home/ethnetintel/eth-net-intelligence-api/app.json:ro
+      - ./monitor/app.json:/eth-net-intelligence-api/app.json:ro
     networks:
       app_net:
         ipv4_address: 172.16.0.100
     restart: always
-
+  
   dashboard:
-    image: buythewhale/ethstats
+    build: dashboard
     volumes:
       - ./dashboard/ws_secret.json:/eth-netstats/ws_secret.json:ro
     ports:
