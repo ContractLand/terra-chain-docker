@@ -12,7 +12,7 @@ bootnodes = [
 # tracing = "on"
 pruning = "archive"
 # fat_db = "on"
-cache_size = 16
+# cache_size = 16
 
 [rpc]
 port = 8545
