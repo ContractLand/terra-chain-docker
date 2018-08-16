@@ -6,10 +6,10 @@ RUN apk add --no-cache --virtual .gyp \
     python \
     make \
     g++ \
-    git 
+    git
 
 RUN npm install -g bower
-RUN git clone https://github.com/appliedblockchain/explorer.git .
+RUN git clone https://github.com/ContractLand/carsenk-explorer.git .
 COPY config.js .
 RUN npm install
 RUN bower install --allow-root
