@@ -63,9 +63,9 @@ services:
     restart: always
 
   monitor:
-    build: monitor
+    image: buythewhale/ethstats_monitor
     volumes:
-      - ./monitor/app.json:/eth-net-intelligence-api/app.json:ro
+      - ./monitor/app.json:/home/ethnetintel/eth-net-intelligence-api/app.json:ro
     networks:
       app_net:
         ipv4_address: 172.16.0.100
