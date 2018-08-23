@@ -6,10 +6,10 @@ auto_update = "all"
 password = ["/parity/authority.pwd"]
 
 [mining]
-reseal_on_txs = "all"
-force_sealing = false
-reseal_min_period = 1000
-reseal_max_period = 10000
+reseal_on_txs = "none"
+force_sealing = true
+reseal_min_period = 0
+reseal_max_period = 5000
 min_gas_price = 1000000000 # 1 GWei
 gas_floor_target = "10000000"
 tx_gas_limit = "10000000"
