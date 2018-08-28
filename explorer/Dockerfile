@@ -8,12 +8,9 @@ RUN apk add --no-cache --virtual .gyp \
     g++ \
     git
 
-RUN npm install -g bower
-RUN git clone https://github.com/ContractLand/carsenk-explorer.git .
-COPY config.js .
+RUN git clone https://github.com/ContractLand/etherchain-light.git --recursive .
 RUN npm install
-RUN bower install --allow-root
 
 EXPOSE 3000
 
-CMD npm run start
+CMD npm start
