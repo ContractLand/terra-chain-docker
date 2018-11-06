@@ -20,3 +20,7 @@ You may change the list of prefunded accounts in `parity/config/chain.json`.
 
 ### Access JSON RPC
 Talk to JSON RPC at [http://127.0.0.1:8545](http://127.0.0.1:8545) with your favorite client.
+
+### Chain spec
+- Permission contract implementation: `0x0000000000000000000000000000000000000009`
+- Permission contract relay: `0x0000000000000000000000000000000000000010`
