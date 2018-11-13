@@ -32,9 +32,6 @@ disable = true
 [ipc]
 disable = true
 
-[dapps]
-disable = true
-
 [secretstore]
 disable = true
 

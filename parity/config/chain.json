@@ -32,7 +32,7 @@
     "eip211Transition": "0x0",
     "eip214Transition": "0x0",
     "eip658Transition": "0x0",
-    "transactionPermissionContract": "0x6Fa2Ee3Bf3C0Db013D049E411511C61a8701E9d0",
+    "transactionPermissionContract": "0x0000000000000000000000000000000000000012",
     "transactionPermissionContractTransition": "0xC8"
   },
   "genesis": {
