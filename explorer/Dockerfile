@@ -1,6 +1,6 @@
 FROM node:9-alpine
 
-WORKDIR /app
+WORKDIR /explorer
 
 RUN apk add --no-cache --virtual .gyp \
     python \
@@ -8,9 +8,11 @@ RUN apk add --no-cache --virtual .gyp \
     g++ \
     git
 
-RUN git clone https://github.com/ContractLand/etherchain-light.git --recursive .
+RUN git clone https://github.com/ContractLand/eth-explorer.git .
 RUN npm install
+RUN npm install bower -g
+RUN bower install --allow-root
 
-EXPOSE 3000
+EXPOSE 8000
 
 CMD npm start
