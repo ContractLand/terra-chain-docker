@@ -6,6 +6,8 @@ services:
     command:
       --config /parity/config/authority.toml
       --engine-signer 0x00bd138abd70e2f00903268f3db08f2d25677c9e
+    entrypoint: /home/parity/bin/parity
+    user: root
     volumes:
       - ./parity/config:/parity/config:ro
       - authorities0:/root/.local/share/io.parity.ethereum/
@@ -22,6 +24,8 @@ services:
     command:
       --config /parity/config/authority.toml
       --engine-signer 0x00aa39d30f0d20ff03a22ccfc30b7efbfca597c2
+    entrypoint: /home/parity/bin/parity
+    user: root
     volumes:
       - ./parity/config:/parity/config:ro
       - authorities1:/root/.local/share/io.parity.ethereum/
@@ -38,6 +42,8 @@ services:
     command:
       --config /parity/config/authority.toml
       --engine-signer 0x002e28950558fbede1a9675cb113f0bd20912019
+    entrypoint: /home/parity/bin/parity
+    user: root
     volumes:
       - ./parity/config:/parity/config:ro
       - authorities2:/root/.local/share/io.parity.ethereum/
