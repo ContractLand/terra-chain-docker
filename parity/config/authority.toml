@@ -11,8 +11,9 @@ force_sealing = true
 reseal_min_period = 0
 reseal_max_period = 5000
 min_gas_price = 1000000000 # 1 GWei
-gas_floor_target = "10000000"
-tx_gas_limit = "10000000"
+gas_cap = "100000000000" # 100 billion
+gas_floor_target = "100000000000" # 100 billion
+tx_gas_limit = "100000000000" # 100 billion
 
 [network]
 bootnodes = [
