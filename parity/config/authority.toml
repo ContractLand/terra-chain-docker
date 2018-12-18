@@ -21,8 +21,6 @@ tx_queue_per_sender = 1000
 tx_queue_strategy = "gas_price"
 tx_queue_no_unfamiliar_locals = true
 tx_time_limit = 5000 # 5 seconds
-tx_queue_ban_count = 3
-tx_queue_ban_time = 15 # 15 seconds
 
 
 [network]
