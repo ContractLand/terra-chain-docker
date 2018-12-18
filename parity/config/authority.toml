@@ -14,6 +14,16 @@ min_gas_price = 1000000000 # 1 GWei
 gas_cap = "100000000000" # 100 billion
 gas_floor_target = "100000000000" # 100 billion
 tx_gas_limit = "100000000000" # 100 billion
+# Tx rate limiting for user
+tx_queue_size = 10000
+tx_queue_mem_limit = 1024
+tx_queue_per_sender = 1000
+tx_queue_strategy = "gas_price"
+tx_queue_no_unfamiliar_locals = true
+tx_time_limit = 5000 # 5 seconds
+tx_queue_ban_count = 3
+tx_queue_ban_time = 15 # 15 seconds
+
 
 [network]
 bootnodes = [
