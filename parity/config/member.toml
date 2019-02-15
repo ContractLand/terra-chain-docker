@@ -13,7 +13,7 @@ fat_db = "on"
 [rpc]
 port = 8545
 interface = "0.0.0.0"
-processing_threads = 4
+processing_threads = 10
 cors = ["all"]
 hosts = ["all"]
 apis = ["safe"]
@@ -21,9 +21,10 @@ apis = ["safe"]
 [websockets]
 port = 8546
 interface = "local"
+max_connections = 1000
 origins = ["all"]
-apis = ["safe"]
 hosts = ["all"]
+apis = ["safe"]
 
 [ipc]
 disable = true
