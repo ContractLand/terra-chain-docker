@@ -20,7 +20,7 @@ apis = ["safe"]
 
 [websockets]
 port = 8546
-interface = "local"
+interface = "0.0.0.0"
 max_connections = 1000
 origins = ["all"]
 hosts = ["all"]
