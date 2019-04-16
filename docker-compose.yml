@@ -12,7 +12,6 @@ services:
       - authorities0:/root/.local/share/io.parity.ethereum/
       - ./parity/authorities/authority0.json:/root/.local/share/io.parity.ethereum/keys/${NETWORK_NAME}/authority.json:ro
       - ./parity/authorities/authority0.pwd:/parity/authority.pwd:ro
-      - ./parity/authorities/authority0.key:/root/.local/share/io.parity.ethereum/network/key:ro
     networks:
       app_net:
         ipv4_address: 172.16.0.10
@@ -29,7 +28,6 @@ services:
       - authorities1:/root/.local/share/io.parity.ethereum/
       - ./parity/authorities/authority1.json:/root/.local/share/io.parity.ethereum/keys/${NETWORK_NAME}/authority.json:ro
       - ./parity/authorities/authority1.pwd:/parity/authority.pwd:ro
-      - ./parity/authorities/authority1.key:/root/.local/share/io.parity.ethereum/network/key:ro
     networks:
       app_net:
         ipv4_address: 172.16.0.11
@@ -46,7 +44,6 @@ services:
       - authorities2:/root/.local/share/io.parity.ethereum/
       - ./parity/authorities/authority2.json:/root/.local/share/io.parity.ethereum/keys/${NETWORK_NAME}/authority.json:ro
       - ./parity/authorities/authority2.pwd:/parity/authority.pwd:ro
-      - ./parity/authorities/authority2.key:/root/.local/share/io.parity.ethereum/network/key:ro
     networks:
       app_net:
         ipv4_address: 172.16.0.12
